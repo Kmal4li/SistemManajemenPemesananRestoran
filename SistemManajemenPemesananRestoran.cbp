@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename=".gitignore">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Restoran.cpp" />
 		<Unit filename="Restoran.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />

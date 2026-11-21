@@ -6,36 +6,34 @@
 
 using namespace std;
 
-typedef Elm_Pelanggan* Adr_Pelanggan;
-typedef Elm_Pesanan* Adr_Pesanan;
+typedef elemenPelanggan *adrPelanggan;
+typedef elemenPesanan *adrPesanan;
 
-struct Infotype_Pelanggan {
-    int idPelanggan;
+struct Pelanggan {
+    int nomorMeja;
     string nama;
 };
 
-struct Infotype_Pesanan {
+struct Pesanan {
     string namaMenu;
-    int jumlah;
+    int jumlahPesanan;
 };
 
-struct List_Pesanan {
-    Adr_Pesanan first;
+struct elemenPesanan {
+    Pesanan info;
+    adrPesanan next;
 };
 
-struct Elm_Pelanggan {
-    Infotype_Pelanggan info;
-    Adr_Pelanggan next;
-    List_Pesanan pesanan;
+struct elemenPelanggan {
+    Pelanggan info;
+    adrPelanggan next;
+    adrPelanggan prev;
+    adrPesanan nextFood;
 };
 
-struct Elm_Pesanan {
-    Infotype_Pesanan info;
-    Adr_Pesanan next;
+struct ListPelanggan {
+    adrPelanggan first;
+    adrPelanggan last;
 };
 
-struct MLL {
-    Adr_Pelanggan first;
-};
-
-#endif // RESTORAN_H_INCLUDED
+#endif // MLL_H_INCLUDED
