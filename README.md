@@ -8,8 +8,7 @@
 
 ## Deskripsi Projek Tubes
 
-Sistem Manajemen Pemesanan Restoran adalah program berbasis C++ (console) yang mengelola data pelanggan beserta pesanan makanan dan minuman yang mereka pesan. Projek ini dibuat sebagai tugas besar mata kuliah Struktur Data di Telkom University.
-
-Data disimpan menggunakan **Multi Linked List (MLL)** dengan relasi **1 to N** (list of list): satu pelanggan dapat memiliki banyak pesanan, dan setiap pelanggan memiliki daftar pesanannya sendiri sehingga pesanan antar pelanggan tidak bercampur.
+Sistem Manajemen Pemesanan Restoran adalah program berbasis C++ (console) yang mengelola data pelanggan beserta pesanan makanan dan minuman yang mereka pesan.
+Data disimpan menggunakan **Multi Linked List (MLL)** dengan relasi **1 to N**: satu pelanggan dapat memiliki banyak pesanan, dan setiap pelanggan memiliki daftar pesanannya sendiri sehingga pesanan antar pelanggan tidak bercampur.
 
 **Project Tugas Besar ini dikerjakan menggunakan codeblocks**
