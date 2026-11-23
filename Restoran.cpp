@@ -105,3 +105,6 @@ adrPelanggan findParent(ListPelanggan L, int nomorMeja) {
 void printParent(ListPelanggan L) {
 
 }
+
+
+
