@@ -8,8 +8,6 @@ void createList(ListPelanggan &L) {
     L.last = nullptr;
 }
 
-
-
 adrPelanggan createParent(int nomorMeja, string nama) {
     adrPelanggan p = new elemenPelanggan;
     p->info.nomorMeja = nomorMeja;
