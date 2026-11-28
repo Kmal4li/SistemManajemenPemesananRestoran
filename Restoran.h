@@ -54,7 +54,6 @@ void printParent(ListPelanggan L);
 
 //Child
 adrPesanan createChild(string namaMenu, int jumlahPesanan);
-
 void insertFirstChild(adrPelanggan p, adrPesanan q);
 void insertLastChild(adrPelanggan p, adrPesanan q);
 void insertAfterChild(adrPesanan prec, adrPesanan q);
@@ -66,6 +65,7 @@ void deleteAfterChild(adrPesanan prec, adrPesanan q);
 adrPesanan findChild(adrPelanggan p, string namaMenu);
 void printChild(adrPelanggan p);
 
+//print all
 void printAll(ListPelanggan L);
 
 

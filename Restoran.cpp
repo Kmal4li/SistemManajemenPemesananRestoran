@@ -8,8 +8,6 @@ void createList(ListPelanggan &L) {
     L.last = nullptr;
 }
 
-
-
 adrPelanggan createParent(int nomorMeja, string nama) {
     adrPelanggan p = new elemenPelanggan;
     p->info.nomorMeja = nomorMeja;
@@ -101,9 +99,28 @@ void deleteAfterParent(ListPelanggan &L, adrPelanggan prec, adrPelanggan p) {
 }
 
 adrPelanggan findParent(ListPelanggan L, int nomorMeja) {
+    adrPelanggan P = L.first;
 
+    while (P != NULL && P->info.nomorMeja != nomorMeja) {
+        P = P->next;
+    }
+
+    return P;
 }
 
 void printParent(ListPelanggan L) {
+    adrPelanggan P = L.first;
 
+    if (P == NULL) {
+        cout << "List pelanggan kosong." << endl;
+        return;
+    }
+
+    int no = 1;
+    while (P != NULL) {
+        cout << no << ". Meja " << P->info.nomorMeja
+             << " Atas nama:  " << P->info.nama << endl;
+        P = P->next;
+        no++;
+    }
 }
