@@ -124,3 +124,6 @@ void printParent(ListPelanggan L) {
         no++;
     }
 }
+
+
+
